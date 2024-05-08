@@ -15,5 +15,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.PAT_DEPLOY_TOKEN }}
           publish_dir: ./index.html # deploy src folder
